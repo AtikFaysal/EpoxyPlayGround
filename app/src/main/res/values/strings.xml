@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">EpoxyPlayGround</string>
+
+
+    <string name="desc_image_content_description">This is description</string>
+
+
+    <string name="format_greeting">Hi, %s 👋🏿</string>
+    <string name="format_payment_date">Payment date: %s</string>
+
+
+    <string name="action_add_money">Add Money</string>
+
+
+    <string name="label_account_balance">Account Balance</string>
+    <string name="label_you_owe">You Owe</string>
+
 </resources>
