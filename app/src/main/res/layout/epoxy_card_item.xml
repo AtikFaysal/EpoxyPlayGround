@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:elevation="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10"
+        android:gravity="center_horizontal"
+        android:background="@color/color_1D3A70">
+
+        <com.epoxy.playground.customview.CustomTV
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/white"
+            tools:text="Account balance"/>
+
+        <com.epoxy.playground.customview.CustomMediumTV
+            android:id="@+id/amountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:textSize="@dimen/extra_large_text_size"
+            android:textColor="@color/white"
+            tools:text="₦ 2,554,706"/>
+
+        <LinearLayout
+            android:id="@+id/bankInfoLn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_15">
+
+            <com.epoxy.playground.customview.CustomTV
+                android:id="@+id/bankNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/regular_text_size"
+                android:textColor="@color/white"
+                tools:text="City Bank"
+                android:paddingHorizontal="@dimen/padding_8"/>
+
+            <ImageView
+                android:id="@+id/copyIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_copy"
+                android:contentDescription="@string/desc_image_content_description"/>
+
+            <com.epoxy.playground.customview.CustomTV
+                android:id="@+id/accountNoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/regular_text_size"
+                android:paddingHorizontal="@dimen/padding_8"
+                android:textColor="@color/white"
+                tools:text="1521556456"/>
+
+        </LinearLayout>
+
+        <com.epoxy.playground.customview.CustomTV
+            android:id="@+id/paymentDateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/regular_text_size"
+            android:paddingHorizontal="@dimen/padding_8"
+            android:layout_marginTop="@dimen/margin_15"
+            android:textColor="@color/white"
+            tools:text="Repayment date: 12th Jan, 2024"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
