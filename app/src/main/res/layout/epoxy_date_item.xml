@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.epoxy.playground.customview.CustomTV android:id="@+id/dateTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/small_text_size"
+    android:textColor="@color/color_8D8D8F"
+    tools:text="Today"
+    android:gravity="center"
+    android:drawablePadding="@dimen/padding_5"
+    android:drawableStart="@drawable/ic_time_circle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" />
+

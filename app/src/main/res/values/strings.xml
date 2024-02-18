@@ -15,4 +15,8 @@
     <string name="label_account_balance">Account Balance</string>
     <string name="label_you_owe">You Owe</string>
 
+
+    <string name="title_recent_transaction">Recent Transactions</string>
+    <string name="title_sea_all">Sea all</string>
+
 </resources>

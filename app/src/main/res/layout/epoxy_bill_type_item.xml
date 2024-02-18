@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.iamkamrul.view.CustomImageView
+        android:id="@+id/menuIconIv"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        app:iv_corner_radius="@dimen/_5sdp"
+        android:src="@drawable/ic_mobile"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/padding_15"/>
+
+    <com.epoxy.playground.customview.CustomTV
+        android:id="@+id/menuNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/regular_text_size"
+        android:textColor="@color/color_1D3A70"
+        tools:text="Airtime"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center"/>
+
+</LinearLayout>

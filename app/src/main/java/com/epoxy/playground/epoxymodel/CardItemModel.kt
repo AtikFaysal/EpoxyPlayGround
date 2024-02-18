@@ -26,6 +26,5 @@ abstract class CardItemModel(
         bankInfoLn.isVisible = entity.cardType == CardType.Balance
     }
 
-    override fun EpoxyCardItemBinding.unbind() {
-    }
+    override fun EpoxyCardItemBinding.unbind() {}
 }

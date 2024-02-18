@@ -48,6 +48,8 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.jakewharton.timber:timber:5.0.1")
+    implementation("com.github.kamrul3288:customview-android:1.1.2")
+    implementation("com.tbuonomo:dotsindicator:5.0")
 
     val epoxyVersion = "5.1.4"
     implementation("com.airbnb.android:epoxy:$epoxyVersion")

@@ -6,7 +6,6 @@ import com.airbnb.epoxy.EpoxyController
 import com.airbnb.epoxy.EpoxyModel
 import com.airbnb.epoxy.ModelCollector
 
-
 fun ModelCollector.carouselNoSnapBuilder(builder: EpoxyCarouselNoSnapBuilder.() -> Unit): CarouselNoSnapModel_ {
     val carouselBuilder = EpoxyCarouselNoSnapBuilder().apply { builder() }
     add(carouselBuilder.carouselNoSnapModel)
@@ -45,3 +44,4 @@ inline fun <T> CarouselModelBuilder.withModelsFrom(
 ) {
     models(items.map { modelBuilder(it) })
 }
+

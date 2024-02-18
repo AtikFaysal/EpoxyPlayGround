@@ -1,15 +1,17 @@
 package com.epoxy.playground
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.epoxy.epoxyView
 import com.epoxy.playground.databinding.ActivityMainBinding
 import com.epoxy.playground.demodata.DemoDataProduce
-import com.epoxy.playground.epoxymodel.CardItemModel
-import com.epoxy.playground.epoxymodel.CardItemModel_
+import com.epoxy.playground.epoxymodel.DateItemModel
 import com.epoxy.playground.epoxymodel.appTopBar
+import com.epoxy.playground.epoxymodel.billTypeItem
 import com.epoxy.playground.epoxymodel.cardItem
+import com.epoxy.playground.epoxymodel.recentTransactionHeading
+import com.epoxy.playground.epoxymodel.spacer
 import com.epoxy.playground.utils.carouselNoSnapBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +48,42 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+
+            spacer {
+                id("divider_1")
+                height(20)
+            }
+
+            carouselNoSnapBuilder {
+                id("bill_menu_item_view")
+                numViewsToShowOnScreen(4.0f)
+                DemoDataProduce.billMenuItems.forEachIndexed { index, billMenuEntity ->
+                    billTypeItem {
+                        id("menu_item_$index")
+                        menuIcon(billMenuEntity.menuIcon)
+                        menuName(billMenuEntity.menuName)
+                    }
+                }
+            }
+
+            spacer {
+                id("divider_2")
+                height(20)
+            }
+
+            recentTransactionHeading {
+                id("recent_transaction_heading")
+            }
+
+            spacer {
+                id("divider_3")
+                height(20)
+            }
+
+            DateItemModel(
+                "Today"
+            ).id("date_title")
+                .addTo(this)
         }
     }
 }
