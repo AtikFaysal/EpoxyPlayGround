@@ -19,4 +19,8 @@
     <string name="title_recent_transaction">Recent Transactions</string>
     <string name="title_sea_all">Sea all</string>
 
+
+    <string name="hint_enter_phone">Enter phone number</string>
+    <string name="hint_enter_password">Enter password</string>
+
 </resources>

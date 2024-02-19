@@ -3,7 +3,11 @@ package com.epoxy.playground.demodata
 import com.epoxy.playground.R
 import com.epoxy.playground.entity.BillMenuEntity
 import com.epoxy.playground.entity.CardItemEntity
+import com.epoxy.playground.entity.TransactionHistoryEntity
+import com.epoxy.playground.entity.TransactionType
 import com.epoxy.playground.epoxymodel.CardItemModel
+import java.util.UUID
+import kotlin.random.Random
 
 object DemoDataProduce {
     val cardItems = listOf(
@@ -37,6 +41,24 @@ object DemoDataProduce {
             menuName = "Electricity"
         )
     )
+
+    fun getTransactionHistory() : List<TransactionHistoryEntity>{
+        val items = mutableListOf<TransactionHistoryEntity>()
+        for (i in 1..10){
+            items.add(
+                TransactionHistoryEntity(
+                    trxId = UUID.randomUUID().toString(),
+                    title = "Loan payment",
+                    dateTime = "20th Jan, 2024, 04:55 PM",
+                    amount = "₦ 1,800,400",
+                    imageUrl = "https://as1.ftcdn.net/v2/jpg/05/59/06/26/1000_F_559062693_MwnyGqzAR2uSRDfG0hxUvb5fd7TB3puZ.jpg",
+                    transactionType = if(i % 2 == 0) TransactionType.CREDIT else TransactionType.DEBIT
+                )
+            )
+        }
+
+        return items
+    }
 }
 
 enum class CardType{

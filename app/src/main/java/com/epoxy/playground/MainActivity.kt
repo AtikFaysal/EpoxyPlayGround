@@ -7,6 +7,7 @@ import com.airbnb.epoxy.epoxyView
 import com.epoxy.playground.databinding.ActivityMainBinding
 import com.epoxy.playground.demodata.DemoDataProduce
 import com.epoxy.playground.epoxymodel.DateItemModel
+import com.epoxy.playground.epoxymodel.TransactionHistoryModel
 import com.epoxy.playground.epoxymodel.appTopBar
 import com.epoxy.playground.epoxymodel.billTypeItem
 import com.epoxy.playground.epoxymodel.cardItem
@@ -84,6 +85,12 @@ class MainActivity : AppCompatActivity() {
                 "Today"
             ).id("date_title")
                 .addTo(this)
+
+            DemoDataProduce.getTransactionHistory().forEach {
+                TransactionHistoryModel(
+                    trxHistory = it,
+                ).id("item_${it.trxId}").addTo(this)
+            }
         }
     }
 }

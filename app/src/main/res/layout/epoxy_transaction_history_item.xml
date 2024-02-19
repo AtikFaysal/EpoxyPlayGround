@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iamkamrul.layout.CustomConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/padding_10"
+    android:paddingVertical="@dimen/padding_5"
+    android:layout_marginHorizontal="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_10"
+    app:cl_background_shape="rectangle"
+    android:background="@color/white"
+    app:cl_corner_radius="@dimen/_5sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageIv"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/image_placeholder"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        android:contentDescription="@string/desc_image_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.epoxy.playground.customview.CustomMediumTV
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/regular_text_size"
+        android:layout_marginStart="@dimen/margin_8"
+        app:layout_constraintBottom_toTopOf="@+id/timeTv"
+        app:layout_constraintStart_toEndOf="@+id/imageIv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Loan repayment" />
+
+    <com.epoxy.playground.customview.CustomTV
+        android:id="@+id/timeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/padding_5"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_8D8D8F"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/titleTv"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+        app:layout_constraintEnd_toStartOf="@+id/amountTv"
+        tools:text="10:30 Pm" />
+
+    <com.epoxy.playground.customview.CustomMediumTV
+        android:id="@+id/amountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/padding_5"
+        android:gravity="center"
+        android:textColor="@color/color_8D8D8F"
+        android:textSize="@dimen/regular_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/imageIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageIv"
+        tools:text=" - ₦ 1,800,400" />
+
+</com.iamkamrul.layout.CustomConstraintLayout>
