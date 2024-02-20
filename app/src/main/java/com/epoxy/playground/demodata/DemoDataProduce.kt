@@ -48,7 +48,7 @@ object DemoDataProduce {
             items.add(
                 TransactionHistoryEntity(
                     trxId = UUID.randomUUID().toString(),
-                    title = "Loan payment",
+                    title = if(i % 2 == 0)  "Credit amount " else "Loan payment",
                     dateTime = "20th Jan, 2024, 04:55 PM",
                     amount = "₦ 1,800,400",
                     imageUrl = "https://as1.ftcdn.net/v2/jpg/05/59/06/26/1000_F_559062693_MwnyGqzAR2uSRDfG0hxUvb5fd7TB3puZ.jpg",

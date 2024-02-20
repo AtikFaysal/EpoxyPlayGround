@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iamkamrul.button.ButtonRegular
+    android:id="@+id/appButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_1D3A70"
+    app:btn_background_shape="rectangle"
+    app:btn_corner_radius="@dimen/_30sdp"
+    android:gravity="center"
+    android:padding="@dimen/padding_10"
+    android:text="@string/action_login"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

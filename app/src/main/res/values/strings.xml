@@ -23,4 +23,9 @@
     <string name="hint_enter_phone">Enter phone number</string>
     <string name="hint_enter_password">Enter password</string>
 
+    <string name="error_invalid_password">Invalid password</string>
+    <string name="error_invalid_phone_number">Invalid phone number</string>
+
+    <string name="action_login">Login</string>
+
 </resources>

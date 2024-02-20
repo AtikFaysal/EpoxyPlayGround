@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkboxCb"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/regular_text_size"/>
+
+    <com.epoxy.playground.customview.CustomBoldTv
+        android:id="@+id/forgotPasswordBtn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_1D3A70"
+        android:textSize="@dimen/regular_text_size"
+        android:text="Forgot password"
+        android:gravity="center_vertical|end" />
+
+</LinearLayout>
